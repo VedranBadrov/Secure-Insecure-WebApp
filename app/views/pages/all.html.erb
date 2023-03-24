@@ -1,0 +1,12 @@
+<%if current_user %>
+    <p>Hello <%= current_user.email %>!</p>
+    <p>You are a [<%= current_user.role %>]</p>
+    <% if current_user.ADMIN? %>
+        <p>Welcome to the page accessible by users with any role</p>
+        <p>This page work as long as you have an account and are logged-in.</p>
+        <p>In case you see this text, your account is authorized to use the application.</p>
+    <% end %>
+<% else %>
+    <p>You must sign in in order to access this page</p>
+    <p>You are not signed as an. Please head back to the home page and create a new account or log-in with an existing one.</p>
+<% end %>

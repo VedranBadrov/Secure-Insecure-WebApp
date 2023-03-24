@@ -1,0 +1,14 @@
+<%if current_user %>
+    <p>Hello <%= current_user.email %>!</p>
+    <p>You are a [<%= current_user.role %>]</p>
+    <% if current_user.ADMIN? %>
+        Welcome to the page accessible only by users with role of ADMIN.</p>
+        In case you see this text, your account is authorized as an admin.</p>
+    <% end %>
+    <p>
+        You have successfully authenticated with your Devise account!
+        You are ready to interact with this application.
+    </p>
+<% else %>
+    <p>You are not signed as an ADMIN.</p>
+<% end %>
