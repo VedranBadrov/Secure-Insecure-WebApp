@@ -5,10 +5,6 @@
         Welcome to the page accessible only by users with role of ADMIN.</p>
         In case you see this text, your account is authorized as an admin.</p>
     <% end %>
-    <p>
-        You have successfully authenticated with your Devise account!
-        You are ready to interact with this application.
-    </p>
 <% else %>
-    <p>You are not signed as an ADMIN.</p>
+    <p>You must be authenticated as an ADMIN in order to access this page</p>
 <% end %>

@@ -1,7 +1,7 @@
 <%if current_user %>
     <p>Hello <%= current_user.email %>!</p>
     <p>You are a [<%= current_user.role %>]</p>
-    <% if current_user.ADMIN? %>
+    <% if current_user %>
         <p>Welcome to the page accessible by users with any role</p>
         <p>This page work as long as you have an account and are logged-in.</p>
         <p>In case you see this text, your account is authorized to use the application.</p>
