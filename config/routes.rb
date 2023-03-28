@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "/All", to: "pages#all"
   get "/Managers&Admin", to: "pages#MA"
   get "/Admin", to: "pages#A"
+  get "/changeRole", to: "pages#changeRole"
 end
