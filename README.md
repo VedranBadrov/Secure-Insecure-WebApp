@@ -3,22 +3,14 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Install and Set-Up rails with the following guide:
 
-* Ruby version
+https://guides.rubyonrails.org/v5.1/getting_started.html
 
-* System dependencies
+Open the application in your text editor (VSCode)
 
-* Configuration
+In the terminal run "bundle install" in order to make sure all GEMs install correctly
 
-* Database creation
+In the terminal run "rails s" in order to start an server instance locally from you machine
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In your browser search for "localhost:3000" which will open the Web Application in your browser.
