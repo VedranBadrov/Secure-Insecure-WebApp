@@ -3,6 +3,9 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+Rails Version: Rails 7.0.4.3
+Ruby Version: ruby 3.1.2p20
+
 Install and Set-Up rails with the following guide:
 
 https://guides.rubyonrails.org/v5.1/getting_started.html
