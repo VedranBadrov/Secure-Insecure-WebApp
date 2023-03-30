@@ -1,9 +1,9 @@
-<%if current_user %>
+<%if current_user.ADMIN? %>
     <p>Hello <%= current_user.email %>!</p>
     <p>You are a [<%= current_user.role %>]</p>
-    <% if current_user.ADMIN? %>
+    <%if current_user.ADMIN? %>
         Welcome to the page accessible only by users with role of ADMIN.</p>
-        In case you see this text, your account is authorized as an admin.</p>
+        In case you see this text, your account is authorized as an ADMIN.</p>
     <% end %>
     <% else %>
         <p>You must be authenticated as an ADMIN in order to access this page</p>
