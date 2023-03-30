@@ -10,7 +10,15 @@ https://guides.rubyonrails.org/v5.1/getting_started.html
 Open the application in your text editor (VSCode)
 
 In the terminal run "bundle install" in order to make sure all GEMs install correctly
+```
+bundle install
+```
 
 In the terminal run "rails s" in order to start an server instance locally from you machine
-
+```
+rails s
+```
 In your browser search for "localhost:3000" which will open the Web Application in your browser.
+```
+localhost:3000
+```
