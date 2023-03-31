@@ -3,22 +3,43 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Rails Version: Rails 7.0.4.3
+Ruby Version: ruby 3.1.2p20
 
-* Ruby version
+Install and Set-Up rails with the following guide:
 
-* System dependencies
+https://guides.rubyonrails.org/v5.1/getting_started.html
 
-* Configuration
+Open the application in your text editor (VSCode)
 
-* Database creation
+In the terminal run "bundle install" in order to make sure all GEMs install correctly
+```
+bundle install
+```
 
-* Database initialization
+In the terminal run "rails s" in order to start an server instance locally from you machine
+```
+rails s
+```
+In your browser search for "localhost:3000" which will open the Web Application in your browser.
+```
+localhost:3000
+```
+To change a role of an existing or new user
+In the terminal type 
+```
+rails c
+```
+Select user that you want to change the role for (first, second, third, fourth, fifth, etc.)
+```
+@user = User.first
+```
+Next change role (0 = User; 1 = Moderator; 2 = Admin)
+```
+@user.role = 2
+```
+Save the updated role
+```
+@user.save
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
