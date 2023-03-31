@@ -42,4 +42,4 @@ Save the updated role
 ```
 @user.save
 ```
-
+The updated role is desplayed on the home page once you are logged in
