@@ -25,3 +25,21 @@ In your browser search for "localhost:3000" which will open the Web Application 
 ```
 localhost:3000
 ```
+To change a role of an existing or new user
+In the terminal type 
+```
+rails c
+```
+Select user that you want to change the role for (first, second, third, fourth, fifth, etc.)
+```
+@user = User.first
+```
+Next change role (0 = User; 1 = Moderator; 2 = Admin)
+```
+@user.role = 2
+```
+Save the updated role
+```
+@user.save
+```
+
